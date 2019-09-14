@@ -1,4 +1,4 @@
-package exercise.strings;
+package exercise.string;
 
 public class StringBuillderExample {
 
