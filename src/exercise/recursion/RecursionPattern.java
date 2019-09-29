@@ -3,8 +3,7 @@ package exercise.recursion;
 public class RecursionPattern {
 
     public static void main(String[] args) {
-        //patternLeft(4,0);
-        patternRight(4,0);
+        patternLeft(5,0);
     }
 
     public static void patternLeft(int row,int col){
@@ -18,7 +17,7 @@ public class RecursionPattern {
             return;
         }
         patternLeft(row,col+1);
-        System.out.print("*");
+        System.out.print(" * ");
     }
 
     public static void patternRight(int row,int col){

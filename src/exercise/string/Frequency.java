@@ -1,17 +1,13 @@
 package exercise.string;
 
+import java.util.Arrays;
+
 public class Frequency {
 
     public static void main(String[] args) {
         String str = "aaabbc";
         int[] freq = frequency(str);
-        for(int i=0;i<freq.length;i++){
-             if(freq[i] > 0){
-                 System.out.print('a'+i);
-             }else{
-                // System.out.print(freq[i]);
-             }
-        }
+        System.out.println(Arrays.toString(freq));
     }
 
     private static int[] frequency(String str){
