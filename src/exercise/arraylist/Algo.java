@@ -1,6 +1,6 @@
-package exercise.sorting;
+package exercise.arraylist;
 
-public class InsertionSort {
+public class Algo {
 
     public static void main(String[] args) {
 

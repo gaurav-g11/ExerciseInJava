@@ -1,8 +1,13 @@
 package exercise.basic;
 
+import java.util.Scanner;
+
 public class PascalPattern {
     public static void main(String[] args) {
-        printPascal3(10);
+      //  printPascal3(10);
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        printPascalTriangle(num);
     }
 
     public static void printPascal(int n) {
@@ -65,6 +70,37 @@ public class PascalPattern {
                 // The first value in a line is always 1
                 System.out.print(C + " ");
                 C = C * (line - i) / i;
+            }
+            System.out.println();
+        }
+    }
+
+
+  /*  public static void printPascalTriangle(int n) {
+        for (int line = 1; line <= n; line++) {
+            for(int k=n; k>line; k--)
+            {
+                System.out.print(" ");
+            }
+            int C = 1;// used to represent C(line, i)
+            for (int i = 1; i <= line; i++) {
+                // The first value in a line is always 1
+                System.out.print(C + " ");
+                C = C * (line - i) / i;
+            }
+            System.out.println();
+        }
+    }*/
+
+    private static void printPascalTriangle(int n) {
+        for(int i=1;i<=n;i++) {
+            for(int j=n;j>i;j--) {
+                System.out.print(" ");
+            }
+            int c = 1;
+            for(int k = 1; k <= i;k++) {
+                System.out.print(c+" ");
+                c = c * (i-k)/k;
             }
             System.out.println();
         }

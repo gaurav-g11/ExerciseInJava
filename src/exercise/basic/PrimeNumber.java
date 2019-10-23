@@ -37,4 +37,8 @@ public class PrimeNumber {
             }
         }
     }
+
+    private static void primeNumber(int num){
+
+    }
 }
